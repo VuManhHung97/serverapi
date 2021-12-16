@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://cdn.socket.io/4.4.0/socket.io.min.js" 
+            integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj" 
+            crossorigin="anonymous">
+        </script>
+        <title>Administrators</title>
+    </head>
+    <body>
+        <ul id="messages"></ul>
+        <form id="form" action="">
+            <input id="input" autocomplete="off" /><button>Send notification</button>
+        </form>
+
+
+        <form id="form1" action="">
+            <input id="input1" autocomplete="off" /><button>Send number table</button>
+        </form>
+
+        <form id="form2" action="">
+            <input id="input2" autocomplete="off" /><button>Send command</button>
+        </form>
+
+        <form id="formStatusTool" action="">
+            <input id="inputStatusTool" autocomplete="off" /><button>StatusTool</button>
+        </form>
+       
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io('http://103.166.183.129:5656');
+        socket.on('connect', (socket) => {
+            console.log(socket);
+        });
+
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (input.value) {
+                socket.emit('send-notification', input.value);
+                input.value = '';
+            }
+        });
+
+
+        var form1 = document.getElementById('form1');
+        var input1 = document.getElementById('input1');
+
+        form1.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (input1.value) {
+                socket.emit('send-number-table', input1.value);
+                input1.value = '';
+            }
+        });
+
+        var form2 = document.getElementById('form2');
+        var input2 = document.getElementById('input2');
+
+        form2.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (input2.value) {
+                var a = ["a", "b"];
+                socket.emit('send-command', a);
+                input2.value = '';
+            }
+        });
+
+        var formStatusTool = document.getElementById('formStatusTool');
+        var inputStatusTool = document.getElementById('inputStatusTool');
+        formStatusTool.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (inputStatusTool.value) {
+                socket.emit('send-status-tool', inputStatusTool.value);
+                inputStatusTool.value = '';
+            }
+        });
+    </script>
+</html>

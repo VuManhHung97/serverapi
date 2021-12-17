@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00CBFF</color>
+    <color name="colorPrimaryDark">#f45d27</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_start">#f45d27</color>
+    <color name="background_end">#f5851f</color>
+
+    <color name="primaryGrey">#808083</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" override="true">#fff</color>
+</resources>

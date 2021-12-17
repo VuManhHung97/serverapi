@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewStatistical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewTimeUpcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:maxLines="1"
+            android:letterSpacing="-0.02"
+            android:lineHeight="22sp"
+            android:text="8th October at 12:00 AM"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:translationY="0.86sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewBarber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="-0.02"
+            android:lineHeight="20sp"
+            android:text="Barber: Marjorie Williamson"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:translationY="1.05sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTimeUpcoming" />
+
+        <TextView
+            android:id="@+id/textViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:letterSpacing="-0.02"
+            android:lineHeight="20sp"
+            android:text="Services: Beard Styling"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:translationY="1.05sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBarber" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:letterSpacing="-0.02"
+            android:lineHeight="20sp"
+            android:text="Address: 1335 Avenue, New York"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:translationY="1.05sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewServices" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

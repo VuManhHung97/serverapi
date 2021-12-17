@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tool Hack</string>
+    <string name="login">Login</string>
+    <string name="email">Enter numbers from 1 to 10</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="do_not_have_an_account">Do not have an account</string>
+    <string name="register">Register</string>
+    <string name="profile">profile</string>
+    <string name="posts">posts</string>
+    <string name="logout">logout</string>
+    <string name="enter_phone">Nhập số điện thoại của bạn</string>
+    <string name="title_register">Bạn chưa có tài khoản? Đăng ký ngay</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="enter_password">Nhập mật khẩu của bạn</string>
+    <string name="title_login">ĐĂNG NHẬP VÀO HỆ THỐNG AI</string>
+    <string name="cancel">Đóng</string>
+    <string name="accept">Liên hệ Admin</string>
+</resources>

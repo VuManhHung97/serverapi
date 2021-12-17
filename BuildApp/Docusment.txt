@@ -1,0 +1,3 @@
+Key store password: kube@123
+Key alias : KubeKey
+Key password: kube@123
